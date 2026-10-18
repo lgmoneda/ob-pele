@@ -14,26 +14,26 @@ An early release; feedback and reproducible bug reports are welcome at
 
 * Example gallery
 
-These diagrams come from [[https://pele.run/examples][Pele's official examples]], rendered locally
-with ob-pele. Open [[file:examples/colorful.org][the colorful example notebook]] for the source blocks
+Screenshots of Org buffers in Emacs, showing Pele source blocks and their
+inline SVG results. The diagrams come from [[https://pele.run/examples][Pele's official examples]]. Open [[file:examples/colorful.org][the colorful example notebook]] for the source blocks
 and executable examples. Upstream examples are MIT licensed; see
 [[file:docs/pele-examples-LICENSE.txt][the Pele license]].
 
 Hawaiʻi: a branching mindmap.
 
-[[file:docs/example-hawaii.svg]]
+[[file:docs/org-hawaii.png]]
 
 Energy flows: a Sankey diagram.
 
-[[file:docs/example-energy.svg]]
+[[file:docs/org-energy.png]]
 
 Restaurant comparison: a radar chart.
 
-[[file:docs/example-restaurants.svg]]
+[[file:docs/org-restaurants.png]]
 
 Hawaiian islands: a timeline.
 
-[[file:docs/example-islands.svg]]
+[[file:docs/org-islands.png]]
 
 * Requirements
 - Emacs 27.1 or later with Org 9.4 or later.
