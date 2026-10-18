@@ -4,6 +4,11 @@ Render [[https://pele.run][Pele]] diagrams from Org Babel source blocks. Pele ac
 syntax; this package runs it locally with Node.js and produces standalone SVG
 files for inline display and HTML export.
 
+[[file:docs/example-emacs.png]]
+
+An example source block and its inline SVG result in Emacs. Try it in
+[[file:examples/diagrams.org][the example notebook]].
+
 An early release; feedback and reproducible bug reports are welcome at
 [[https://github.com/lgmoneda/ob-pele/issues][GitHub Issues]].
 
