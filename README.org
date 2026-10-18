@@ -12,6 +12,29 @@ An example source block and its inline SVG result in Emacs. Try it in
 An early release; feedback and reproducible bug reports are welcome at
 [[https://github.com/lgmoneda/ob-pele/issues][GitHub Issues]].
 
+* Example gallery
+
+These diagrams come from [[https://pele.run/examples][Pele's official examples]], rendered locally
+with ob-pele. Open [[file:examples/colorful.org][the colorful example notebook]] for the source blocks
+and executable examples. Upstream examples are MIT licensed; see
+[[file:docs/pele-examples-LICENSE.txt][the Pele license]].
+
+Hawaiʻi: a branching mindmap.
+
+[[file:docs/example-hawaii.svg]]
+
+Energy flows: a Sankey diagram.
+
+[[file:docs/example-energy.svg]]
+
+Restaurant comparison: a radar chart.
+
+[[file:docs/example-restaurants.svg]]
+
+Hawaiian islands: a timeline.
+
+[[file:docs/example-islands.svg]]
+
 * Requirements
 - Emacs 27.1 or later with Org 9.4 or later.
 - Node.js 20 or later and npm.

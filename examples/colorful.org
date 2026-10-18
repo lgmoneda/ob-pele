@@ -1,0 +1,97 @@
+#+title: Colorful Pele examples
+
+Examples from [[https://pele.run/examples][the official Pele gallery]] by kepano and the Pele contributors.
+Source diagrams are reproduced under the MIT license; see [[file:../docs/pele-examples-LICENSE.txt][the upstream license]].
+
+Execute a block with =C-c C-c=, then =C-c C-x C-v= to display its SVG.
+The checked-in previews below are rendered with this package.
+
+* Hawaiʻi mindmap
+
+Source: [[https://pele.run/examples/mindmap][Pele mindmap examples]].
+
+#+begin_src pele :file ../docs/example-hawaii.svg
+mindmap
+  root((Hawaiʻi))
+    History
+      Old legends
+      ::icon(fa fa-book)
+      Voyaging
+        Polynesian navigators who sailed by the stars
+    Nature
+      Mountains<br/>and volcanoes
+      Ocean life
+        Reef
+            Sea turtles
+            Monk seals
+            Parrotfish
+    Culture
+      Hula and lei
+      ʻUkulele
+#+end_src
+
+#+RESULTS:
+[[file:../docs/example-hawaii.svg]]
+
+* Energy flows
+
+Source: [[https://pele.run/examples/sankey][Pele sankey examples]].
+
+#+begin_src pele :file ../docs/example-energy.svg
+---
+config:
+  sankey:
+    showValues: false
+    nodeWidth: 15
+    nodePadding: 20
+---
+sankey
+
+Electricity grid,Heating and cooling - homes,113.726
+Electricity grid,Industry,342.165
+Electricity grid,Losses,56.691
+#+end_src
+
+#+RESULTS:
+[[file:../docs/example-energy.svg]]
+
+* Restaurant comparison
+
+Source: [[https://pele.run/examples/radar][Pele radar examples]].
+
+#+begin_src pele :file ../docs/example-restaurants.svg
+radar-beta
+  title Restaurant Comparison
+  axis food["Food Quality"], service["Service"], price["Price"]
+  axis ambiance["Ambiance"]
+
+  curve a["Restaurant A"]{4, 3, 2, 4}
+  curve b["Restaurant B"]{3, 4, 3, 3}
+  curve c["Restaurant C"]{2, 3, 4, 2}
+  curve d["Restaurant D"]{2, 2, 4, 3}
+
+  graticule polygon
+  max 5
+#+end_src
+
+#+RESULTS:
+[[file:../docs/example-restaurants.svg]]
+
+* Hawaiian islands timeline
+
+Source: [[https://pele.run/examples/timeline][Pele timeline examples]].
+
+#+begin_src pele :file ../docs/example-islands.svg
+timeline
+    title Timeline of the Hawaiian Islands
+    section Older islands
+        Kauaʻi : 5 million years old, Canyons, Sea <br>cliffs
+        Oʻahu : 3 million years old, Diamond Head, Surf breaks
+        Molokaʻi : 2 million years old, Fishponds, Tall cliffs
+    section Younger islands
+        Maui : 1 million years old, Haleakalā, Whale watching
+        Hawaiʻi : Still growing, Mauna Kea, Kīlauea
+#+end_src
+
+#+RESULTS:
+[[file:../docs/example-islands.svg]]
