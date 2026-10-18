@@ -1,0 +1,31 @@
+#+title: Pele in Org
+
+Execute a block with C-c C-c, then use C-c C-x C-v to toggle inline images.
+
+* Flowchart
+#+begin_src pele :file flowchart.svg
+flowchart LR
+  A[Read a paper] --> B[Take notes]
+  B --> C[Connect ideas]
+  C --> D[Write]
+#+end_src
+
+* Sequence
+#+begin_src pele :file sequence.svg :font-size 18
+sequenceDiagram
+  participant Me
+  participant Notes
+  Me->>Notes: Capture an idea
+  Notes-->>Me: Find related ideas
+#+end_src
+
+* Mindmap
+#+begin_src pele :file mindmap.svg
+mindmap
+  root((Reading))
+    Literature
+      Proust
+    Research
+      Papers
+      Experiments
+#+end_src

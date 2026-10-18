@@ -1,0 +1,31 @@
+name: Tests
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  test:
+    strategy:
+      matrix:
+        include:
+          - os: ubuntu-22.04
+            node: 20
+          - os: ubuntu-24.04
+            node: 24
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+          cache: npm
+      - name: Install Emacs
+        run: sudo apt-get update && sudo apt-get install -y emacs-nox
+      - run: emacs --version
+      - run: npm ci --ignore-scripts
+      - run: npm test
+      - name: Test Org Babel integration
+        run: emacs --batch -Q -L . -l test/ob-pele-test.el -f ert-run-tests-batch-and-exit
+      - name: Byte compile
+        run: emacs --batch -Q -L . --eval '(setq byte-compile-error-on-warn t)' -f batch-byte-compile ob-pele.el

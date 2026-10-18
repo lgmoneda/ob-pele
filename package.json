@@ -1,0 +1,23 @@
+{
+  "name": "ob-pele",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Local Pele renderer for Org Babel",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@xmldom/xmldom": "0.9.12",
+    "pele": "1.6.0"
+  },
+  "scripts": {
+    "test": "node --test test/renderer.test.mjs"
+  },
+  "license": "MIT",
+  "author": "Luis Moneda (https://github.com/lgmoneda)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lgmoneda/ob-pele.git"
+  }
+}

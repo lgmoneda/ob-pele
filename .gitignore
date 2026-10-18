@@ -1,0 +1,4 @@
+node_modules/
+*.elc
+examples/*.svg
+.DS_Store
